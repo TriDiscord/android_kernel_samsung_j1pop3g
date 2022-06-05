@@ -14,7 +14,7 @@ jobs:
     - name: Getting Toolchain
       run: |
         sudo apt-get install lib32z1
-        sudo git clone --depth 1 --branch oreo_release --single-branch https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8 /opt/toolchains/arm-eabi-4.8/
+        sudo git clone --depth 1 --branch oreo-release --single-branch https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8 /opt/toolchains/arm-eabi-4.8/
 
     - name: Building Kernel
       run: |
